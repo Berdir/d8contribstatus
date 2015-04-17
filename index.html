@@ -61,12 +61,13 @@
     <section class="ddd-intro" data-background="lib/image/background.jpg">
       <h1>Drupal 8 Contrib overview</h1>
 
-      <h2>Sascha Grossenbacher - @Berdir</h2>
+      <h2>Sascha Grossenbacher - @Berdir<br /><br /><br />Slides: <a href="http://berdir.github.io/d8contribstatus/">http://berdir.github.io/d8contribstatus/</a></h2>
     </section>
 
     <section>
       <h2>About me</h2>
       <ul>
+        <li>Sascha Grossenbacher, Berdir</li>
         <li>Core contributor and entity system co-maintainer</li>
         <li>Contrib maintainer: TMGMT, Monitoring, ...</li>
         <li>Switzerland</li>
@@ -75,22 +76,43 @@
     </section>
 
     <section>
-      <h2>Why am I presenting about this?</h2>
+      <h2>Topics</h2>
+      <ul>
+        <li>Why</li>
+        <li>In core</li>
+        <li>Obsolete</li>
+        <li>Ports available</li>
+        <li>Not ported</li>
+        <li>Additional and new interesting modules</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>What? Why?</h2>
       <ul>
         <li>NP8 - Install profile for news portals</li>
         <li>Drupal 8, 40 contrib modules</li>
         <li>Many of those supported or fully ported by us</li>
         <li>In active development since March, 2014</li>
         <li><a href="http://www.md-systems.ch/en/projekt/2014/np8">http://www.md-systems.ch/en/projekt/2014/np8</a></li>
-        <li>These slides: <a href="http://berdir.github.io/d8contribstatus/">http://berdir.github.io/d8contribstatus/</a></li>
+        <li>Top modules based on <a href="https://gist.github.com/webchick/956a2d7a49c7490fefb5">https://gist.github.com/webchick/956a2d7a49c7490fefb5</a></li>
       </ul>
     </section>
 
     <section>
       <h2>In core</h2>
+      <section>
+        <p>Functionality that has been moved into drupal core</p>
+        <p>For many modules, not every feature was moved into core</p>
+      </section>
+      <section>
+        <p>#1 Views, #2 Parts of Ctools</p>
+        <p>Block API, Context</p>
+        <p>Field types: Entity Reference #, Date, Link, Email, Telephone</p>
+      </section>
       <ul>
         <li>Views, Parts of Ctools, Block API, Context</li>
-        <li>Field types: Entity Reference, Date, Link, Email, Telephone</li>
+        <li></li>
         <li>Entity API</li>
         <li>Rest/Services</li>
         <li>Wysiwyg: CKEditor, Quickedit</li>
@@ -100,17 +122,8 @@
     </section>
 
     <section>
-      <h2>D8 Module status</h2>
-      <p><a href="http://d8ms.worldempire.ch/">http://d8ms.worldempire.ch/</a></p>
-      <p>Daily test runs</p>
-      <p>Quality assurance, Maintain compatibility & continuity</p>
-      <p>Send me pull requests to add your module.</p>
-    </section>
-
-    <section>
       <section>
         <h2>Most popular modules status</h2>
-        <p>Based on <a href="https://gist.github.com/webchick/956a2d7a49c7490fefb5">https://gist.github.com/webchick/956a2d7a49c7490fefb5</a></p>
         <p><strong>Use on your own risk</strong></p>
         <p>Disclaimer: Personal opinion</p>
       </section>
@@ -187,10 +200,100 @@
       </section>
       <section>
         <h2>#25 Media</h2>
-        <p></p>
-        <p>Allows to create pages, place blocks, context</p>
-        <p>Panels: Official, Early status, Status unknown, Not a lot of recent activity</p>
+        <p>Drupal Media project, Fresh start, multiple projects</p>
+        <p>Media Entity, Entity Browser, Entity Embed</p>
+        <p><strong>Location</strong>: https://github.com/drupal-media</p>
       </section>
+      <section>
+        <h2>#26 CAPTCHA</h2>
+        <p>Official port, basic functionality is working</p>
+      </section>
+      <section>
+        <h2>#28 Devel</h2>
+        <p>Official port, Current status not known to me</p>
+      </section>
+      <section>
+        <h2>#29 Field group</h2>
+        <p>Official port, Working but similar limitations as in 7.x, Not used by used</p>
+      </section>
+      <section>
+        <h2>#33 Menu block</h2>
+        <p>Basic functionality is in core (Multiple blocks, configurable depth & starting point)</p>
+      </section>
+      <section>
+        <h2>#34 Variable</h2>
+        <p>Likely obsolete, partially replaced by config translation, other parts will likely be separate projects</p>
+      </section>
+      <section>
+        <h2>#35 Context</h2>
+        <p>Context API is in Core, core Block UI is starting to use it, Page manager uses it as well, future of project unclear</p>
+      </section>
+      <section>
+        <h2>#36 Views Bulk Operations (VBO)</h2>
+        <p>Basic functionality is in core</p>
+        <p>Missing: Apply an action to more than one page, advanced actions.</p>
+      </section>
+      <section>
+        <h2>#37 Global Redirect</h2>
+        <p>Official port, not up to date</p>
+        <p>Some improvements on https://github.com/md-systems/globalredirect</p>
+        <p>Goal: Merge with redirect</p>
+      </section>
+      <section>
+        <h2>#39 Superfish</h2>
+        <p>TODO</p>
+      </section>
+      <section>
+        <h2>#40 Redirect</h2>
+        <p>Inofficial port, Started as direct port, some improvements, work in progress</p>
+        <p>Better caching, Usage tracking removed, Partial fix for the infamous redirect loop bug</p>
+        <p><strong>Location</strong>: https://github.com/md-systems/redirect</p>
+      </section>
+      <section>
+        <h2>#42 Display Suite</h2>
+        <p>Official port, No personal experience, Maintainer is here at Dev Days</p>
+      </section>
+      <section>
+        <h2>#43 Strongarm</h2>
+        <p>At least partially obsolete with configuration deployment</p>
+      </section>
+      <section>
+        <h2>#44 Zen</h2>
+        <p>TODO</p>
+      </section>
+      <section>
+        <h2>#45 Advanced help</h2>
+        <p>Unknown</p>
+        <p>Tour module is not a direct replacement, but might be an interesting alternative</p>
+      </section>
+      <section>
+        <h2>#47 Address Field</h2>
+        <p>TODO</p>
+      </section>
+      <section>
+        <h2>#48 Page Title</h2>
+        <p>TODO</p>
+      </section>
+      <section>
+        <h2>#49 Calendar</h2>
+        <p>TODO</p>
+      </section>
+      <section>
+        <h2>#50 Omega</h2>
+        <p>TODO</p>
+      </section>
+    </section>
+
+    <section>
+      <h2>D8 Module status</h2>
+      <p><a href="http://d8ms.worldempire.ch/">http://d8ms.worldempire.ch/</a></p>
+      <p>Daily test runs</p>
+      <p>Quality assurance, Maintain compatibility & continuity</p>
+      <p>Send me pull requests to add your module.</p>
+    </section>
+
+    <section>
+      <p>These slides: <a href="http://berdir.github.io/d8contribstatus/">http://berdir.github.io/d8contribstatus/</a></p>
     </section>
 
 
