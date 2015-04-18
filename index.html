@@ -61,7 +61,9 @@
     <section class="ddd-intro" data-background="lib/image/background.jpg">
       <h1>Drupal 8 Contrib overview</h1>
 
-      <h2>Sascha Grossenbacher - @Berdir<br /><br /><br />Slides: <a href="http://berdir.github.io/d8contribstatus/">http://berdir.github.io/d8contribstatus/</a></h2>
+      <h2>Sascha Grossenbacher - @Berdir<br/><br/><br/>Slides: <a
+        href="http://berdir.github.io/d8contribstatus/">http://berdir.github.io/d8contribstatus/</a>
+      </h2>
     </section>
 
     <section>
@@ -77,13 +79,17 @@
 
     <section>
       <h2>Topics</h2>
+
+      <p>Top 50 modules based on <a
+        href="https://gist.github.com/webchick/956a2d7a49c7490fefb5">https://gist.github.com/webchick/956a2d7a49c7490fefb5</a>
+      </p>
       <ul>
         <li>Why</li>
         <li>In core</li>
         <li>Obsolete</li>
         <li>Ports available</li>
         <li>Not ported</li>
-        <li>Additional and new interesting modules</li>
+        <li>Additional and new interesting projects</li>
       </ul>
     </section>
 
@@ -92,10 +98,11 @@
       <ul>
         <li>NP8 - Install profile for news portals</li>
         <li>Drupal 8, 40 contrib modules</li>
-        <li>Many of those supported or fully ported by us</li>
+        <li>Many of those partially or fully ported by us</li>
         <li>In active development since March, 2014</li>
-        <li><a href="http://www.md-systems.ch/en/projekt/2014/np8">http://www.md-systems.ch/en/projekt/2014/np8</a></li>
-        <li>Top modules based on <a href="https://gist.github.com/webchick/956a2d7a49c7490fefb5">https://gist.github.com/webchick/956a2d7a49c7490fefb5</a></li>
+        <li><a href="http://www.md-systems.ch/en/projekt/2014/np8">http://www.md-systems.ch/en/projekt/2014/np8</a>
+        </li>
+        <li>Disclaimer: Personal opinion</li>
       </ul>
     </section>
 
@@ -103,197 +110,367 @@
       <h2>In core</h2>
       <section>
         <p>Functionality that has been moved into drupal core</p>
+
         <p>For many modules, not every feature was moved into core</p>
       </section>
       <section>
-        <p>#1 Views, #2 Parts of Ctools</p>
-        <p>Block API, Context</p>
-        <p>Field types: Entity Reference #, Date, Link, Email, Telephone</p>
-      </section>
-      <ul>
-        <li>Views, Parts of Ctools, Block API, Context</li>
-        <li></li>
-        <li>Entity API</li>
-        <li>Rest/Services</li>
-        <li>Wysiwyg: CKEditor, Quickedit</li>
-        <li>Translation: Entity Translation, Config translation (I18n), Transliteration, Localization update</li>
-        <li>Module filter</li>
-      </ul>
-    </section>
+        <p>#2 Views, #1 Parts of Ctools</p>
 
-    <section>
-      <section>
-        <h2>Most popular modules status</h2>
-        <p><strong>Use on your own risk</strong></p>
-        <p>Disclaimer: Personal opinion</p>
-      </section>
-      <section>
-        <h2>#3 Token</h2>
-        <p>Official port, Working, Tests passing, Direct port</p>
-        <p></p>
-      </section>
-      <section>
-        <h2>#4 Libraries API</h2>
-        <p>Official port, Direct port, Not fully working, Future unclear</p>
-      </section>
-      <section>
-        <h2>#5 Pathauto</h2>
-        <p>Inofficial port, Direct port + Refactoring, Tests passing</p>
-        <p><strong>Location</strong>: https://github.com/md-systems/pathauto</p>
-      </section>
-      <section>
-        <h2>#5 Webform</h2>
-        <p>Official port, Recent activity, Status unknown, No tests</p>
-        <p><strong>Alternative</strong>: Core contact module + Contact Storage</p>
-      </section>
-      <section>
-        <h2>#8 Administration menu</h2>
-        <p>Stale port, Not working, Future unclear</p>
-        <p><strong>Alternative</strong>: Core toolbar has been improved a lot</p>
-      </section>
-      <section>
-        <h2>#10 IMCE</h2>
-        <p>GSoC project, stale port, Status unknown</p>
-        <p><strong>Location</strong>: https://www.drupal.org/sandbox/catherinecarr/2336925</p>
-      </section>
-      <section>
-        <h2>#12 Google Analytics</h2>
-        <p>Official project, Currently not working without patches</p>
-      </section>
-      <section>
-        <h2>#15 JQuery Update</h2>
-        <p>Not needed as long as Drupal core ships with a recent JQuery version</p>
-        <p>Possibly never, depends on whether core will update JQuery in minor releases</p>
-      </section>
-      <section>
-        <h2>#16 Backup and Migrate</h2>
-        <p>No port</p>
-      </section>
-      <section>
-        <h2>#18 Colorbox</h2>
-        <p>Official port, Status unknown, A few recent updates</p>
-      </section>
-      <section>
-        <h2>#19 Rules</h2>
-        <p>Official, early port, Separate session & sprints</p>
-      </section>
-      <section>
-        <h2>#21 Features</h2>
-        <p>Early port, Status unknown, Recent activity</p>
-        <p>Limited to original purpose, creation of specific features.</p>
-        <p>Configuration deployments functionality is included in Drupal core</p>
-      </section>
-      <section>
-        <h2>#22 Metatag</h2>
-        <p>Official Early port, recently started</p>
-        <p><strong>Location</strong>: https://www.drupal.org/node/2052441</p>
-      </section>
-      <section>
-        <h2>#23 XML Sitemap</h2>
-        <p>Official port, GSoC project, Recent activity, Status unknown</p>
-      </section>
-      <section>
-        <h2>#24 Panels</h2>
-        <p>Page manager: https://www.drupal.org/project/page_manager</p>
-        <p>Allows to create pages, place blocks, ontext. Simple but relatively stable</p>
-        <p>Panels: Official, Early status, Status unknown, Not a lot of recent activity</p>
-      </section>
-      <section>
-        <h2>#25 Media</h2>
-        <p>Drupal Media project, Fresh start, multiple projects</p>
-        <p>Media Entity, Entity Browser, Entity Embed</p>
-        <p><strong>Location</strong>: https://github.com/drupal-media</p>
-      </section>
-      <section>
-        <h2>#26 CAPTCHA</h2>
-        <p>Official port, basic functionality is working</p>
-      </section>
-      <section>
-        <h2>#28 Devel</h2>
-        <p>Official port, Current status not known to me</p>
-      </section>
-      <section>
-        <h2>#29 Field group</h2>
-        <p>Official port, Working but similar limitations as in 7.x, Not used by used</p>
-      </section>
-      <section>
-        <h2>#33 Menu block</h2>
-        <p>Basic functionality is in core (Multiple blocks, configurable depth & starting point)</p>
-      </section>
-      <section>
-        <h2>#34 Variable</h2>
-        <p>Likely obsolete, partially replaced by config translation, other parts will likely be separate projects</p>
-      </section>
-      <section>
-        <h2>#35 Context</h2>
-        <p>Context API is in Core, core Block UI is starting to use it, Page manager uses it as well, future of project unclear</p>
+        <p>Block API, Context</p>
+
+        <p>#33 Menu block: Basic functionality is in core (Multiple blocks,
+          configurable depth & starting point)</p>
       </section>
       <section>
         <h2>#36 Views Bulk Operations (VBO)</h2>
+
         <p>Basic functionality is in core</p>
+
         <p>Missing: Apply an action to more than one page, advanced actions.</p>
       </section>
       <section>
-        <h2>#37 Global Redirect</h2>
+        <h4>Field types</h4>
+
+        <p>#27 Entity Reference (#41 User/Node Reference, Role Reference, XY
+          Reference)</p>
+
+        <p>#9 Date</p>
+
+        <p>#14 Link</p>
+
+        <p>#46 Email</p>
+
+        <p>#848 Telephone</p>
+      </section>
+      <section>
+        <p>#13 CKEditor ( #11 Wyswiwyg)</p>
+      </section>
+      <section>
+        <p>#6 Entity API</p>
+
+        <p>REST Web Services (#156 Services with Basic Authentication)</p>
+      </section>
+      <section>
+        <h4>Translation</h4>
+
+        <p>Content translation (#192 Entity translation)</p>
+
+        <p>Config Translation (#38 I18N, ...)</p>
+
+        <p>#32 Transliteration</p>
+
+        <p>#30 Localization update</p>
+      </section>
+      <section>
+        <p>#20 Module filter</p>
+      </section>
+    </section>
+
+    <section>
+      <h2>Obsolete, Less useful</h2>
+      <section>
+        <h2>#8 Administration menu</h2>
+
+        <p>Stale port, Not working</p>
+
+        <p>Core toolbar has been improved a lot</p>
+      </section>
+      <section>
+        <h2>#15 JQuery Update</h2>
+
+        <p>Not needed as long as Drupal core ships with a recent JQuery
+          version</p>
+
+        <p>Maybe never, depends on whether core will update JQuery in minor
+          releases</p>
+      </section>
+      <section>
+        <h2>#21 Features</h2>
+
+        <p>Early port</p>
+
+        <p>Limited to original purpose, creation of specific features.</p>
+
+        <p>Configuration deployments functionality is included in Drupal
+          core</p>
+      </section>
+      <section>
+        <h2>#34 Variable</h2>
+
+        <p>Likely obsolete, partially replaced by config translation, other
+          parts will likely be separate projects</p>
+      </section>
+      <section>
+        <h2>#35 Context</h2>
+
+        <p>Context API is in Core, core Block UI is starting to use it, Page
+          manager uses it as well, future of project unclear</p>
+      </section>
+
+      <section>
+        <h2>#43 Strongarm</h2>
+
+        <p>At least partially obsolete with configuration deployment</p>
+      </section>
+    </section>
+
+    <section>
+      <h2>Big core</h2>
+
+      <p><strong>~20</strong> out of the top 50 modules are in core or no longer
+        needed</p>
+    </section>
+
+    <section>
+      <h2>Ports available</h2>
+      <section>
+        <p><strong>Use on your own risk</strong></p>
+      </section>
+      <section>
+        <h3>#3 Token</h3>
+
+        <p>Official port, Working, Tests passing, Direct port</p>
+
+        <p></p>
+      </section>
+      <section>
+        <h3>#4 Libraries API</h3>
+
+        <p>Official port, Direct port, Not fully working, Future unclear</p>
+      </section>
+      <section>
+        <h3>#5 Pathauto</h3>
+
+        <p>Inofficial port, Direct port + Refactoring, Tests passing</p>
+
+        <p><strong>Location</strong>: <a href="https://github.com/md-systems/pathauto">https://github.com/md-systems/pathauto</a>
+        </p>
+      </section>
+      <section>
+        <h3>#5 Webform</h3>
+
+        <p>Official port, Recent activity, Status unknown, No tests</p>
+
+        <p><strong>Alternative</strong>: Core contact module + Contact Storage
+        </p>
+      </section>
+      <section>
+        <h3>#10 IMCE</h3>
+
+        <p>GSoC project, stale port, Status unknown</p>
+
+        <p><strong>Location</strong>:
+          <a href="https://www.drupal.org/sandbox/catherinecarr/2336925">https://www.drupal.org/sandbox/catherinecarr/2336925</a>
+        </p>
+      </section>
+      <section>
+        <h3>#12 Google Analytics</h3>
+
+        <p>Official project, Currently not working without patches</p>
+      </section>
+      <section>
+        <h3>#16 Backup and Migrate</h3>
+
+        <p>Official port, a bit stale (January 2015)</p>
+      </section>
+      <section>
+        <h3>#18 Colorbox</h3>
+
+        <p>Official port, Status unknown, A few recent updates</p>
+      </section>
+      <section>
+        <h3>#19 Rules</h3>
+
+        <p>Official, early port, Separate session & sprints</p>
+      </section>
+      <section>
+        <h3>#22 Metatag</h3>
+
+        <p>Official Early port, recently started</p>
+
+        <p><strong>Location</strong>: <a
+          href="https://www.drupal.org/node/2052441">https://www.drupal.org/node/2052441</a></p>
+      </section>
+      <section>
+        <h3>#23 XML Sitemap</h3>
+
+        <p>Official port, GSoC project, Recent activity, Status unknown</p>
+      </section>
+      <section>
+        <h3>#24 Panels</h3>
+
+        <p>Page manager: <a href="https://www.drupal.org/project/page_manager">https://www.drupal.org/project/page_manager</a>
+        </p>
+
+        <p>Allows to create pages, place blocks, context. Simple but relatively
+          stable</p>
+
+        <p>Panels: Official, Early status, Status unknown, Not a lot of recent
+          activity</p>
+      </section>
+      <section>
+        <h3>#25 Media</h3>
+
+        <p>Drupal Media project, Fresh start, multiple projects</p>
+
+        <p>Media Entity, Entity Browser, Entity Embed</p>
+
+        <p><strong>Location</strong>: <a href="https://github.com/drupal-media">https://github.com/drupal-media</a></p>
+      </section>
+      <section>
+        <h3>#26 CAPTCHA</h3>
+
+        <p>Official port, basic functionality is working</p>
+      </section>
+      <section>
+        <h3>#28 Devel</h3>
+
+        <p>Official port, Recent updates</p>
+      </section>
+      <section>
+        <h3>#29 Field group</h3>
+
+        <p>Official port, Working but similar limitations as in 7.x, Not used by
+          used</p>
+      </section>
+      <section>
+        <h3>#37 Global Redirect</h3>
+
         <p>Official port, not up to date</p>
-        <p>Some improvements on https://github.com/md-systems/globalredirect</p>
+
+        <p>Some improvements on <a href="https://github.com/md-systems/globalredirect">https://github.com/md-systems/globalredirect</a>
+        </p>
+
         <p>Goal: Merge with redirect</p>
       </section>
       <section>
-        <h2>#39 Superfish</h2>
-        <p>TODO</p>
+        <h3>#40 Redirect</h3>
+
+        <p>Inofficial port, Started as direct port, some improvements, work in
+          progress</p>
+
+        <p>Better caching, Usage tracking removed, Partial fix for the infamous
+          redirect loop bug</p>
+
+        <p><strong>Location</strong>: <a href="https://github.com/md-systems/redirect">https://github.com/md-systems/redirect</a>
+        </p>
       </section>
       <section>
-        <h2>#40 Redirect</h2>
-        <p>Inofficial port, Started as direct port, some improvements, work in progress</p>
-        <p>Better caching, Usage tracking removed, Partial fix for the infamous redirect loop bug</p>
-        <p><strong>Location</strong>: https://github.com/md-systems/redirect</p>
+        <h3>#42 Display Suite</h3>
+
+        <p>Official port, No personal experience, Maintainer is here at Dev
+          Days</p>
       </section>
       <section>
-        <h2>#42 Display Suite</h2>
-        <p>Official port, No personal experience, Maintainer is here at Dev Days</p>
+        <h3>#47 Address Field</h3>
+
+        <p>Inofficial port available at <a href="https://github.com/webflo/addressfield">https://github.com/webflo/addressfield</a>
+        </p>
+
+        <p>Official new version is being worked on as part of Commerce 2.x, see <br>
+          <a href="https://drupalcommerce.org/blog/16864/commerce-2x-stories-addressing">https://drupalcommerce.org/blog/16864/commerce-2x-stories-addressing</a>
+        </p>
+      </section>
+    </section>
+
+    <section>
+      <h2>Not available yet</h2>
+
+      <section>
+        <h3>#39 Superfish</h3>
+
+        <p>Maintainer says he is working on it, nothing public</p>
+      </section>
+
+
+      <section>
+        <h3>#45 Advanced help</h3>
+
+        <p>Status Unknown, empty 8.x-1.x branch</p>
+
+        <p>Tour module is not a direct replacement, but might be an interesting
+          alternative</p>
+      </section>
+
+      <section>
+        <h3>#48 Page Title</h3>
+
+        <p>No 8.x activity visible</p>
+      </section>
+
+      <section>
+        <h3>#49 Calendar</h3>
+
+        <p>No 8.x activity visible</p>
+      </section>
+
+    </section>
+
+    <section>
+      <h2>Additional and new interesting projects</h2>
+      <section>
+        <h4>Mail / Newsletter</h4>
+        <p>Mailsystem: <a href="https://github.com/LukyLuke/mailsystem">https://github.com/LukyLuke/mailsystem</a></p>
+        <p>Swiftmailer: <a href="https://github.com/webflo/drupal-swiftmailer">https://github.com/webflo/drupal-swiftmailer</a> </p>
+        <p>Simplenews + Scheduler: Official ports available</p>
       </section>
       <section>
-        <h2>#43 Strongarm</h2>
-        <p>At least partially obsolete with configuration deployment</p>
+        <h4>Composer manager</h4>
+        <p>Utility module to manage composer dependencies</p>
       </section>
       <section>
-        <h2>#44 Zen</h2>
-        <p>TODO</p>
+        <h4>Commerce</h4>
+        <p>There was a separate session about the status of Drupal Commerce 2.x</p>
+        <p>We are using Payment + Currency for custom payment processing</p>
       </section>
       <section>
-        <h2>#45 Advanced help</h2>
-        <p>Unknown</p>
-        <p>Tour module is not a direct replacement, but might be an interesting alternative</p>
+        <h4>Default content</h4>
+        <p>Useful small module that allows to create/import content from HAL+JSON</p>
+        <p>Location: <a href="https://github.com/larowlan/default_content">Default content</a></p>
       </section>
       <section>
-        <h2>#47 Address Field</h2>
-        <p>TODO</p>
+        <h4>Default content</h4>
+        <p>Useful small module that allows to create/import content from HAL+JSON</p>
+        <p>Location: <a href="https://github.com/larowlan/default_content">Default content</a></p>
       </section>
       <section>
-        <h2>#48 Page Title</h2>
-        <p>TODO</p>
+        <h4>Flag: official port</h4>
+        <p>Poll: New implementation of the poll module that was removed from core</p>
+        <p>Search API: Official port</p>
+        <p>Search API Solr: <a href="https://github.com/amateescu/search_api_solr">https://github.com/amateescu/search_api_solr</a> </p>
       </section>
-      <section>
-        <h2>#49 Calendar</h2>
-        <p>TODO</p>
-      </section>
-      <section>
-        <h2>#50 Omega</h2>
-        <p>TODO</p>
-      </section>
+
     </section>
 
     <section>
       <h2>D8 Module status</h2>
-      <p><a href="http://d8ms.worldempire.ch/">http://d8ms.worldempire.ch/</a></p>
+
+      <p><a href="http://d8ms.worldempire.ch/">http://d8ms.worldempire.ch/</a>
+      </p>
+
       <p>Daily test runs</p>
+
       <p>Quality assurance, Maintain compatibility & continuity</p>
+
       <p>Send me pull requests to add your module.</p>
     </section>
 
     <section>
-      <p>These slides: <a href="http://berdir.github.io/d8contribstatus/">http://berdir.github.io/d8contribstatus/</a></p>
+      <h2>Other resources</h2>
+
+      <p><a href="https://groups.drupal.org/drupal-8-production-sites">https://groups.drupal.org/drupal-8-production-sites</a>
+      </p>
+
+
+      <p><a href="http://www.bluespark.com/status-top-100-contributed-modules-drupal-8">http://www.bluespark.com/status-top-100-contributed-modules-drupal-8</a></p>
+      <p><a href="http://d8upgrade.org/">http://d8upgrade.org/</a> by Pronovix</p>
+    </section>
+
+    <section>
+      <h2>Questions?</h2>
+
+      <p>Slides?: <a href="http://berdir.github.io/d8contribstatus/">http://berdir.github.io/d8contribstatus/</a>
+      </p>
     </section>
 
 
